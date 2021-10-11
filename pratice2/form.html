@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>HTML Forms</h2>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" name="fname" id="fname" value="John" /><br />
+
+      <label for="lname">Last name:</label><br />
+      <input type="text" name="lname" id="lname" value="Doe" readonly /><br />
+
+      <label for="data">Data:</label><br />
+      <input type="text" name="data" id="data" value="None" disabled /><br />
+
+      <label for="age">Age:</label><br />
+      <input type="number" name="age" id="age" required /><br />
+
+      <label for="cars">Select:</label> <br />
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br />
+
+      <label for="cars">Multiple:</label> <br />
+      <select name="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br />
+
+      <label for="gender">Gender:</label> <br />
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label> <br />
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label> <br />
+      <input type="radio" name="gender" id="other" value="other" />
+      <label for="other">Other</label> <br />
+
+      <label for="vehicle">Choose:</label> <br />
+      <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike" />
+      <label for="vehicle1">I have a bike</label> <br />
+      <input type="checkbox" name="vehicle2" id="vehicle2" value="Car" />
+      <label for="vehicle2">I have a car</label> <br />
+      <input type="checkbox" name="vehicle3" id="vehicle3" value="Boat" />
+      <label for="vehicle3">I have a boat</label> <br />
+
+      <label for="message">Text Area:</label> <br />
+      <textarea name="message" id="message" cols="30" rows="10">
+          The cat was playing in the garden.
+      </textarea>
+      <br />
+
+      <label for="favcolor">Select your favorite color:</label> <br />
+      <input type="color" name="favcolor" id="favcolor" /> <br />
+
+      <label for="birthday">Birthday:</label> <br />
+      <input type="date" name="birthday" id="birthday" /> <br />
+
+      <label for="email">Enter your email:</label> <br />
+      <input type="email" name="email" id="email" /> <br />
+
+      <label for="myfile">Select a file:</label> <br />
+      <input type="file" name="myfile" id="myfile" /> <br />
+
+      <input type="submit" value="Submit" /> <br />
+    </form>
+    <p>If you click the "Submit" button, the forn-data will be sent to a page called "/action_page,php"</p>
+  </body>
+</html>
