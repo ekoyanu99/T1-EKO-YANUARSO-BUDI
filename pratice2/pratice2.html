@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
+    <style>
+      body {
+        background: -webkit-linear-gradient(right, #3a77f1, #5fcceb);
+      }
+      #wrap {
+        background: #fbfbfb;
+        border-radius: 8px;
+        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+        height: 60%;
+        width: 80%;
+        margin: 6rem auto 8.1rem auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
   <body>
-    <form action="" style="text-align: justify">
-      <!--Input checkbox-->
-      <input type="checkbox" name="checkbox" id="checkbox" /> <br />
-      <!--Input color-->
-      <input type="color" name="color" id="color" /> <br />
-      <!--Input date-->
-      <input type="date" name="date" id="date" /> <br />
-      <!--Input datetime-local-->
-      <input type="datetime-local" name="datetime-local" id="datetime-local" /> <br />
-      <!--Input email-->
-      <input type="email" name="email" id="email" /> <br />
+    <form id="wrap" action="" style="text-align: center">
+      <!--Input file and image-->
+      <input type="image" src="images/img_chania.jpg" alt="" style="border-radius: 100%; width: 200px; height: 200px" /> <br />
+      <br />
+      <label for="image">Upload foto profil : </label> <br />
+
       <!--Input file-->
       <input type="file" name="file" id="file" /> <br />
-      <!--Input hidden-->
-      <input type="hidden" name="hidden" /> <br />
-      <!--Input image-->
-      <input type="image" src="" alt="" /> <br />
-      <!--Input month-->
-      <input type="month" name="month" id="month" /> <br />
-      <!--Input number-->
-      <input type="number" name="number" id="number" /> <br />
+
+      <label for="name">Nama lengkap : </label> <br />
+      <input type="text" name="name" id="name" value="Eko Yanuarso Budi" /> <br />
+
+      <label for="gender">Pilih jenis kelamin : </label> <br />
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <br />
+
       <!--Input password-->
       <label for="password">Masukkan password:</label> <br />
       <input type="password" name="password" id="password" /> <br />
       <!--Input password-->
       <label for="kpassword">Masukkan password kembali:</label> <br />
       <input type="kpassword" name="kpassword" id="kpassword" /> <br />
+
+      <!--Input date-->
+      <label for="date">Masukkan tanggal lahir : </label> <br />
+      <input type="date" name="date" id="date" /> <br />
+
+      <label for="message">Motivasi Hidup :</label> <br />
+      <textarea name="" id="" cols="30" rows="10"></textarea> <br />
+
+      <!--Input color-->
+      <input type="color" name="color" id="color" /> <br />
+      <!--Input datetime-local-->
+      <input type="datetime-local" name="datetime-local" id="datetime-local" /> <br />
+      <!--Input email-->
+      <input type="email" name="email" id="email" /> <br />
+      <!--Input hidden-->
+      <input type="hidden" name="hidden" /> <br />
+
+      <!--Input month-->
+      <input type="month" name="month" id="month" /> <br />
+      <!--Input number-->
+      <input type="number" name="number" id="number" /> <br />
       <!--Input radio-->
       <input type="radio" name="radio" id="radio" /> <br />
       <!--Input range-->
@@ -37,8 +72,7 @@
       <input type="reset" value="" /> <br />
       <!--Input search-->
       <input type="search" name="search" id="search" /> <br />
-      <!--Input submit-->
-      <input type="submit" value="" /> <br />
+
       <!--Input tel-->
       <input type="tel" name="tel" id="tel" /> <br />
       <!--Input text-->
@@ -49,20 +83,12 @@
       <input type="url" name="url" id="url" /> <br />
       <!--Input week-->
       <input type="week" name="week" id="week" /> <br />
-      <!--Input button-->
-      <input type="button" value="" /> <br />
+
+      <!--Input checkbox-->
+      <input type="checkbox" name="checkbox" id="checkbox" />
+      <label for="aggreement">Dengan mengklik submit maka anda setuju dengan ketetuan dan syarat yang berlaku</label> <br />
+      <!--Input submit, input button and button cancel-->
+      <button>Cancel</button> <input type="submit" value="Submit" /> <input type="button" value="Lainnya" /> <br />
     </form>
-
-    <input type="text" name="" id="" />
-
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-
-    <select name="" id=""></select>
-
-    <button></button>
-
-    <option value=""></option>
-
-    <label for=""></label>
   </body>
 </html>
