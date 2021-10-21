@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      :root {
+        --satu: #6495ed;
+        --dua: #faf0e6;
+        --tiga: #f700ff;
+      }
+
+      body {
+        background-color: var(--satu);
+      }
+
+      h2 {
+        border-bottom: 2px solid var(--satu);
+      }
+
+      .container {
+        color: var(--blue);
+        background-color: var(--dua);
+        padding: 15px;
+      }
+
+      button {
+        background-color: var(--dua);
+        color: var(--satu);
+        border: 1px solid var(--satu);
+        padding: 5px;
+      }
+
+      @media screen and (max-width: 600px) {
+        body {
+          background-color: var(--tiga);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Using the var() Function</h1>
+
+    <div class="container">
+      <h2>Lorem Ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+      <p>
+        <button>Yes</button>
+        <button>No</button>
+      </p>
+    </div>
+  </body>
+</html>
