@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .height {
+        width: 80px;
+        height: 100px;
+        background: cyan;
+        transition-property: height;
+        transition-duration: 3s;
+        transition-timing-function: linear;
+        transition-delay: 1s;
+      }
+
+      .height:hover {
+        height: 300px;
+      }
+      .width {
+        width: 80px;
+        height: 100px;
+        background: gold;
+        transition-property: width;
+        transition-duration: 3s;
+        transition-timing-function: linear;
+        transition-delay: 1s;
+      }
+
+      .width:hover {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The transition Properties Specified One by One</h1>
+
+    <p>Hover over the div element below, to see the transition effect:</p>
+
+    <div class="height"></div>
+    <div class="width"></div>
+
+    <p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+  </body>
+</html>
