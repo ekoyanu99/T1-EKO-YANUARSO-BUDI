@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embedded Script</title>
+    <script src="js/script1.js"></script>
+  </head>
+  <body>
+    <label>Rumus Luas Segitiga</label> <br />
+    <input type="number" id="alas" placeholder="masukkan alas" /> <br />
+    <input type="number" id="tinggi" placeholder="masukkan tinggi" /> <br />
+    <button onclick="hitung_luas_segitiga()">Hitung</button>
+    <label>Hasil : </label> <label id="hasil">0</label>
+
+    <br />
+    <br />
+
+    <label>Konversi nilai angka ke huruf</label> <br />
+    <input type="number" class="nilai_angka" placeholder="masukan nilai angka" />
+    <button onclick="konversi()">Konversi</button> <br />
+    <label>Nilai huruf kamu adalah : </label> <label id="hasil2">-</label><br />
+
+    <br />
+    <br />
+
+    <label>Daftar Belanja</label><br />
+    <input type="text" id="nama_barang" placeholder="Nama Barang" />
+    <input type="number" id="jumlah" placeholder="Jumlah" onkeyup="hitung_total()" />
+    <input type="number" id="harga" placeholder="Harga" onkeyup="hitung_total()" />
+    <input type="number" readonly id="total" placeholder="Total" /> <br />
+    <button onclick="cetak()">Cetak</button>
+  </body>
+</html>
