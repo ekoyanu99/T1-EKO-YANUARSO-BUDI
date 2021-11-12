@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "9cd8327f-9d3f-4e7e-8b09-7a165143b475",
+		"name": "quotes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "class_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "registration_number",
+							"value": "19102124",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Eko Yanuarso Budi",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "19102124@ittelkom-pwt.ac.id",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://quotes.informatika.app/auth/registration",
+					"protocol": "https",
+					"host": [
+						"quotes",
+						"informatika",
+						"app"
+					],
+					"path": [
+						"auth",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "registration_number",
+							"value": "19102124",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://quotes.informatika.app/auth/login",
+					"protocol": "https",
+					"host": [
+						"quotes",
+						"informatika",
+						"app"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Quotes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiZWFyZXIiLCJpZCI6NDc4LCJyZWdpc3RyYXRpb25fbnVtYmVyIjoiMTkxMDIxMjQiLCJpYXQiOjE2MzY2OTgzMjMsImV4cCI6MTYzNjc4NDcyM30.AMD88YsinDZGqHtR-frKVKeuSD3GkTz4-ZyWQiyEJcU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://quotes.informatika.app/api/v1/quotes",
+					"protocol": "https",
+					"host": [
+						"quotes",
+						"informatika",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"quotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Quotes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiZWFyZXIiLCJpZCI6NDc4LCJyZWdpc3RyYXRpb25fbnVtYmVyIjoiMTkxMDIxMjQiLCJpYXQiOjE2MzY2OTgzMjMsImV4cCI6MTYzNjc4NDcyM30.AMD88YsinDZGqHtR-frKVKeuSD3GkTz4-ZyWQiyEJcU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Life",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Don't trust anyone",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://quotes.informatika.app/api/v1/quotes",
+					"protocol": "https",
+					"host": [
+						"quotes",
+						"informatika",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"quotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My Quotes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiZWFyZXIiLCJpZCI6NDc4LCJyZWdpc3RyYXRpb25fbnVtYmVyIjoiMTkxMDIxMjQiLCJpYXQiOjE2MzY2OTgzMjMsImV4cCI6MTYzNjc4NDcyM30.AMD88YsinDZGqHtR-frKVKeuSD3GkTz4-ZyWQiyEJcU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://quotes.informatika.app/api/v1/myquotes",
+					"protocol": "https",
+					"host": [
+						"quotes",
+						"informatika",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"myquotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Class Quotes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiZWFyZXIiLCJpZCI6NDc4LCJyZWdpc3RyYXRpb25fbnVtYmVyIjoiMTkxMDIxMjQiLCJpYXQiOjE2MzY2OTgzMjMsImV4cCI6MTYzNjc4NDcyM30.AMD88YsinDZGqHtR-frKVKeuSD3GkTz4-ZyWQiyEJcU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://quotes.informatika.app/api/v1/class_quotes",
+					"protocol": "https",
+					"host": [
+						"quotes",
+						"informatika",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"class_quotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Quotes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiZWFyZXIiLCJpZCI6NDc4LCJyZWdpc3RyYXRpb25fbnVtYmVyIjoiMTkxMDIxMjQiLCJpYXQiOjE2MzY2OTgzMjMsImV4cCI6MTYzNjc4NDcyM30.AMD88YsinDZGqHtR-frKVKeuSD3GkTz4-ZyWQiyEJcU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://quotes.informatika.app/api/v1/quotes",
+					"protocol": "https",
+					"host": [
+						"quotes",
+						"informatika",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"quotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Quotes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiZWFyZXIiLCJpZCI6NDc4LCJyZWdpc3RyYXRpb25fbnVtYmVyIjoiMTkxMDIxMjQiLCJpYXQiOjE2MzY2OTgzMjMsImV4cCI6MTYzNjc4NDcyM30.AMD88YsinDZGqHtR-frKVKeuSD3GkTz4-ZyWQiyEJcU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "Life",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Life is a game don't be loser",
+							"type": "text"
+						},
+						{
+							"key": "_method",
+							"value": "PUT",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://quotes.informatika.app/api/v1/quotes/1056",
+					"protocol": "https",
+					"host": [
+						"quotes",
+						"informatika",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"quotes",
+						"1056"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Quote",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiZWFyZXIiLCJpZCI6NDc4LCJyZWdpc3RyYXRpb25fbnVtYmVyIjoiMTkxMDIxMjQiLCJpYXQiOjE2MzY2OTgzMjMsImV4cCI6MTYzNjc4NDcyM30.AMD88YsinDZGqHtR-frKVKeuSD3GkTz4-ZyWQiyEJcU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "quote_id",
+							"value": "26",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://quotes.informatika.app/api/v1/quotes/1138",
+					"protocol": "https",
+					"host": [
+						"quotes",
+						"informatika",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"quotes",
+						"1138"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
